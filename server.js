@@ -2,6 +2,8 @@ var express = require('express');
 var path = require('path');
 var app = express();
 
+app.use(express.static('public'));
+
 app.get('/components', function(req, res){
     res.render('content');
 });
